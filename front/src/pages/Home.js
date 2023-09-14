@@ -7,7 +7,7 @@ import axios from "axios";
 const Home = () => {
   const [data, setData] = useState([]);
   const loadData = async () => {
-    const response = await axios.get("http://localhost:5000/api/get");
+    const response = await axios.get("http://localhost:5000/api/getall");
     setData(response.data);
   };
   useEffect(() => {

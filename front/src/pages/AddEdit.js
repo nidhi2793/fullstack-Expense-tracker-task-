@@ -25,7 +25,7 @@ const AddEdit = () => {
   useEffect(() => {
     axios
       .get(`http://localhost:5000/api/get/${id}`)
-      .then((res) => setState({ ...res.data[0] }));
+      .then((res) => setState({ ...res.data }));
   }, [id]);
 
   const handleSubmit = (e) => {
